@@ -16,29 +16,20 @@ import {
 // =================== NavBarList Start here ====================
 export const navBarList = [
   {
-    _id: 1001,
-    title: "Home",
+    title: "Caffe-F",
     link: "/",
   },
   {
-    _id: 1002,
-    title: "Shop",
+    title: "Thực Đơn",
     link: "/shop",
   },
   {
-    _id: 1003,
-    title: "About",
-    link: "/about",
-  },
-  {
-    _id: 1004,
-    title: "Contact",
+    title: "Liên Hệ",
     link: "contact",
   },
   {
-    _id: 1005,
-    title: "Journal",
-    link: "/journal",
+    title: "About",
+    link: "/about",
   },
 ];
 // =================== NavBarList End here ======================

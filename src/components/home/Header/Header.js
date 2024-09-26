@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { logo, logoLight } from "../../../assets/images";
+import { logo} from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { navBarList } from "../../../constants";
 import Flex from "../../designLayouts/Flex";
@@ -27,12 +27,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full h-20 bg-white sticky top-0 z-50 border-b-[1px] border-b-gray-200">
+    <div className="w-full h-20 bg-[#F5F5F3] sticky top-0 z-50 border-b-[1px] border-b-gray-200">
       <nav className="h-full px-4 max-w-container mx-auto relative">
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
-            <div>
-              <Image className="w-20 object-cover" imgSrc={logo} />
+            <div className="m-2">
+              <Image className="w-40 object-cover p-2" imgSrc={logo} />
             </div>
           </Link>
           <div>
@@ -44,14 +44,13 @@ const Header = () => {
                 className="flex items-center w-auto z-50 p-0 gap-2"
               >
                 <>
-                  {navBarList.map(({ _id, title, link }) => (
+                  {navBarList.map(({title, link }) => (
                     <NavLink
-                      key={_id}
-                      className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#767676] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#262626] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                      className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-14 text-lg text-[#3d3d3d] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#85693f] hoverEffect"
                       to={link}
                       state={{ data: location.pathname.split("/")[1] }}
                     >
-                      <li>{title}</li>
+                      <li className="whitespace-nowrap">{title}</li>
                     </NavLink>
                   ))}
                 </>
@@ -72,8 +71,8 @@ const Header = () => {
                   <div className="w-full h-full bg-primeColor p-6">
                     <img
                       className="w-28 mb-6"
-                      src={logoLight}
-                      alt="logoLight"
+                      src={logo}
+                      alt="logo"
                     />
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
