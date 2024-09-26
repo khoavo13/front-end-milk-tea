@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../../assets/images";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/authSlice";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
   // ============= Initial State End here ===============
   // ============= Error Msg Start here =================
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
-
+  const [errUsername, setErrUsername] = useState("");
   // ============= Error Msg End here ===================
   const [successMsg, setSuccessMsg] = useState("");
   // ============= Event Handler Start here =============
@@ -19,28 +22,35 @@ const SignIn = () => {
     setEmail(e.target.value);
     setErrEmail("");
   };
+
+  const handleUsername = (e) => {
+    setUsername(e.target.value);
+    setErrUsername("");
+  };
   const handlePassword = (e) => {
     setPassword(e.target.value);
     setErrPassword("");
   };
   // ============= Event Handler End here ===============
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    if (!email) {
-      setErrEmail("Enter your email");
+    if (!username) {
+      setErrUsername("Enter your username");
     }
 
     if (!password) {
       setErrPassword("Create a password");
     }
     // ============== Getting the value ==============
-    if (email && password) {
-      setSuccessMsg(
-        `Hello dear, Thank you for your attempt. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
-      );
-      setEmail("");
-      setPassword("");
+    if (username && password) {
+      console.log(username);
+      dispatch(login({ username, password }));
+      console.log("token: " + localStorage.getItem("accessToken"));
+      navigate("/");
     }
   };
   return (
@@ -135,22 +145,22 @@ const SignIn = () => {
                 Sign in
               </h1>
               <div className="flex flex-col gap-3">
-                {/* Email */}
+                {/* Username */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                    Username
                   </p>
                   <input
-                    onChange={handleEmail}
-                    value={email}
+                    onChange={handleUsername}
+                    value={username}
                     className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
-                    type="email"
-                    placeholder="john@workemail.com"
+                    type="text"
+                    placeholder="username"
                   />
-                  {errEmail && (
+                  {errUsername && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
                       <span className="font-bold italic mr-1">!</span>
-                      {errEmail}
+                      {errUsername}
                     </p>
                   )}
                 </div>
