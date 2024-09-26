@@ -1,11 +1,12 @@
 import logo from "./icon-home.png";
 import logoLight from "./logoLight.png";
-import bannerImgOne from "./banner/bannerImgOne.webp";
-import bannerImgTwo from "./banner/bannerImgTwo.webp";
-import bannerImgThree from "./banner/bannerImgThree.webp";
-import saleImgOne from "./sale/saleImgOne.webp";
-import saleImgTwo from "./sale/saleImgTwo.webp";
-import saleImgThree from "./sale/saleImgThree.webp";
+import banslide1 from "./sale/banslide1.png";
+import banslide2 from "./sale/banslide2.png";
+import banslide3 from "./sale/banslide3.png";
+import banner2 from "./sale/banner2.png";
+import banner3 from "./sale/banner3.png";
+import banner4 from "./sale/banner4.png";
+import bannersp from "./sale/bannersp.png";
 // ============== Products Start here ====================
 // New Arrivals
 import newArrOne from "./products/newArrival/newArrOne.webp";
@@ -25,8 +26,6 @@ import spfTwo from "./products/specialOffer/spfTwo.webp";
 import spfThree from "./products/specialOffer/spfThree.webp";
 import spfFour from "./products/specialOffer/spfFour.webp";
 
-// Year Product
-import productOfTheYear from "./products/productOfTheYear.webp";
 // ============== Products End here ======================
 import paymentCard from "./payment.png";
 import emptyCart from "../images/emptyCart.png";
@@ -35,12 +34,13 @@ import emptyCart from "../images/emptyCart.png";
 export {
   logo,
   logoLight,
-  bannerImgOne,
-  bannerImgTwo,
-  bannerImgThree,
-  saleImgOne,
-  saleImgTwo,
-  saleImgThree,
+  banslide1,
+  banslide2,
+  banslide3,
+  banner2,
+  banner3,
+  banner4,
+  bannersp,
   // ===================== Products start here ============
   // New Arrivals
   newArrOne,
@@ -60,8 +60,6 @@ export {
   spfThree,
   spfFour,
 
-  // Year Product
-  productOfTheYear,
   // ===================== Products End here ==============
   paymentCard,
   emptyCart,
