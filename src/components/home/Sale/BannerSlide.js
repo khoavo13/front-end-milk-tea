@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay } from 'swiper/modules';
-import { banslide1, banslide2, banslide3 } from '../../../assets/images';
+import { banslide1, banslide2, banslide3, banslider4 } from '../../../assets/images';
 
 
 const items = [
@@ -22,7 +22,12 @@ const items = [
     {
         key: 3,
         src: banslide3,
-        alt: 'Slide2'
+        alt: 'Slide3'
+    },
+    {
+        key: 4,
+        src: banslider4,
+        alt: 'Slide4'
     }
 ];
 

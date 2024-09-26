@@ -3,6 +3,7 @@ import logoLight from "./logoLight.png";
 import banslide1 from "./sale/banslide1.png";
 import banslide2 from "./sale/banslide2.png";
 import banslide3 from "./sale/banslide3.png";
+import banslider4 from "./sale/banslide4.png";
 import banner2 from "./sale/banner2.png";
 import banner3 from "./sale/banner3.png";
 import banner4 from "./sale/banner4.png";
@@ -37,6 +38,7 @@ export {
   banslide1,
   banslide2,
   banslide3,
+  banslider4,
   banner2,
   banner3,
   banner4,
