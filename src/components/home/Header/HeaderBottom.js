@@ -39,16 +39,16 @@ const HeaderBottom = () => {
   }, [searchQuery]);
 
   return (
-    <div className="w-full bg-[#F5F5F3] relative">
+    <div className="w-full bg-[#ffca7b] relative">
       <div className="max-w-container mx-auto">
-        <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
+        <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24  ">
           <div
             onClick={() => setShow(!show)}
             ref={ref}
             className="flex h-14 cursor-pointer items-center gap-2 text-primeColor"
           >
             <HiOutlineMenuAlt4 className="w-5 h-5" />
-            <p className="text-[14px] font-normal">Shop by Category</p>
+            <p className="text-[14px] font-normal">Menu Caffe-Fresh</p>
 
             {show && (
               <motion.ul
