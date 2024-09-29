@@ -93,7 +93,7 @@ const Footer = () => {
               Home appliances
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              New Arrivals
+              Thức uống mới nối
             </li>
           </ul>
         </div>
