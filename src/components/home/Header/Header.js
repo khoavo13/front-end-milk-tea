@@ -105,11 +105,11 @@ const Header = () => {
                           transition={{ duration: 0.4 }}
                           className="text-sm flex flex-col gap-1"
                         >
-                          <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
-                          <li className="headerSedenavLi">Others</li>
+                          <li className="headerSedenavLi">Thức uống mới ra mắt</li>
+                          <li className="headerSedenavLi">Thức uống bán chạy</li>
+                          <li className="headerSedenavLi">Thức uống cà phê</li>
+                          <li className="headerSedenavLi">Thức uống trà</li>
+                          <li className="headerSedenavLi">Khác</li>
                         </motion.ul>
                       )}
                     </div>
@@ -128,11 +128,11 @@ const Header = () => {
                           transition={{ duration: 0.4 }}
                           className="text-sm flex flex-col gap-1"
                         >
-                          <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
-                          <li className="headerSedenavLi">Others</li>
+                          <li className="headerSedenavLi">Thức uống mới ra mắt</li>
+                          <li className="headerSedenavLi">Thức uống bán chạy</li>
+                          <li className="headerSedenavLi">Thức uống cà phê</li>
+                          <li className="headerSedenavLi">Thức uống trà</li>
+                          <li className="headerSedenavLi">Khác</li>
                         </motion.ul>
                       )}
                     </div>
