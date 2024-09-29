@@ -62,21 +62,10 @@ const SignIn = () => {
           </Link>
           <div className="flex flex-col gap-1 -mt-1">
             <h1 className="font-titleFont text-xl font-medium">
-              Stay sign in for more
+              Duy trì đăng nhập để biết thêm
             </h1>
-            <p className="text-base">When you sign in, you are with us!</p>
-          </div>
-          <div className="w-[300px] flex items-start gap-3">
-            <span className="text-green-500 mt-1">
-              <BsCheckCircleFill />
-            </span>
-            <p className="text-base text-gray-300">
-              <span className="text-white font-semibold font-titleFont">
-                Get started fast with OREBI
-              </span>
-              <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
+            <p className="text-base">
+              Khi bạn đăng nhập, bạn đang ở bên chúng tôi!
             </p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
@@ -85,11 +74,11 @@ const SignIn = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all OREBI services
+                Bắt đầu nhanh chóng với Fresh Coffee
               </span>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
+              Thưởng thức ngay những loại đồ uống tươi ngon, đa dạng và tiện
+              lợi. Đặt hàng chỉ với vài cú nhấp chuột!
             </p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
@@ -98,17 +87,30 @@ const SignIn = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Trusted by online Shoppers
+                Truy cập tất cả dịch vụ của Fresh Coffee{" "}
               </span>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
+              Từ đặt hàng online, chọn kích thước, hương vị cho đến thanh toán
+              linh hoạt. Trải nghiệm mua sắm nhanh chóng, tiện lợi!
+            </p>
+          </div>
+          <div className="w-[300px] flex items-start gap-3">
+            <span className="text-green-500 mt-1">
+              <BsCheckCircleFill />
+            </span>
+            <p className="text-base text-gray-300">
+              <span className="text-white font-semibold font-titleFont">
+                Được tin tưởng bởi hàng nghìn khách hàng
+              </span>
+              <br />
+              Chúng tôi tự hào phục vụ khách hàng với các sản phẩm chất lượng,
+              dịch vụ giao hàng nhanh chóng và đáng tin cậy.
             </p>
           </div>
           <div className="flex items-center justify-between mt-10">
             <Link to="/">
               <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-                © OREBI
+                © AntiBugs
               </p>
             </Link>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">

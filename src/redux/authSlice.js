@@ -7,7 +7,6 @@ const API_URL = "http://localhost:8080/api";
 
 export const login = createAsyncThunk('auth/login', async ({ username, password }, thunkAPI) => {
   try {
-    console.log("OK login")
     const response = await axios.post(`${API_URL}/user/login`, 
       {username, password },
       {
@@ -24,19 +23,17 @@ export const login = createAsyncThunk('auth/login', async ({ username, password 
   }
 });
 
-
-/*
 export const logout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   // Xóa token hoặc thực hiện các thao tác logout khác
   try {
     // Ví dụ xóa token khỏi localStorage
+    
     return {}; // Trả về giá trị trống khi logout thành công
   // eslint-disable-next-line no-unreachable
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data); // Trả về lỗi nếu có
   }
 });
-*/
 const getFromLocalStorage = (key, defaultValue) => {
   const value = localStorage.getItem(key);
   return value ? JSON.parse(value) : defaultValue;
@@ -70,12 +67,12 @@ const authSlice = createSlice({
         localStorage.setItem('accessToken', action.payload.token);
         localStorage.setItem('refreshToken', action.payload.refresh_token);
         localStorage.setItem('user', JSON.stringify(action.payload.username));
+        console.log("OKE LOGIN")
       })
       .addCase(login.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.payload.error; // Giả sử lỗi nằm trong `error`
       })
-      /*
       .addCase(logout.fulfilled, (state) => {
         state.status = 'idle';
         state.refreshToken = null;
@@ -89,7 +86,6 @@ const authSlice = createSlice({
         state.status = 'failed';
         state.error = action.payload.error; // Giả sử lỗi nằm trong `error`
       })
-        */
    ;
   },
 });
