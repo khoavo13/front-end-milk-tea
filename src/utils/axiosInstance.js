@@ -7,7 +7,7 @@ const axiosInstance = axios.create({
   timeout: 10000, // Thời gian chờ (timeout) 10 giây
   headers: {
     //'Content-Type': 'application/json'
-    // 'Content-Type': 'multipart/form-data'
+    //'Content-Type': 'multipart/form-data'
   },
 });
 console.log(process.env.REACT_APP_API_URL);
