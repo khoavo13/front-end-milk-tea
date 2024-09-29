@@ -25,27 +25,27 @@ const SpecialOffers = () => {
         <Product
           _id="1102"
           img={spfTwo}
-          productName="Tea Table"
+          productName="Trà xanh đậu đỏ"
           price="180.00"
-          color="Gray"
+          color=""
           badge={true}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
         <Product
           _id="1103"
           img={spfThree}
-          productName="Headphones"
+          productName="Cà phê sữa"
           price="25.00"
-          color="Mixed"
+          color=""
           badge={true}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
         <Product
           _id="1104"
           img={spfFour}
-          productName="Sun glasses"
+          productName="Trà ô long hạt sen"
           price="220.00"
-          color="Black"
+          color=""
           badge={true}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
