@@ -48,7 +48,7 @@ const NewArrivals = () => {
   };
   return (
     <div className="w-full pb-16">
-      <Heading heading="New Arrivals" />
+      <Heading heading="Thức uống mới ra mắt" />
       <Slider {...settings}>
         <div className="px-2">
           <Product
