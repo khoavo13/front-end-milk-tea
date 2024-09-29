@@ -100,7 +100,7 @@ const NewArrivals = () => {
             img={newArrTwo}
             productName="Funny toys for babies"
             price="60.00"
-            color="Mixed"
+            color=""
             badge={false}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />

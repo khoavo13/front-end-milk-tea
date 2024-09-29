@@ -18,7 +18,7 @@ const BestSellers = () => {
           img={bestSellerOne}
           productName="Flower Base"
           price="35.00"
-          color="Blank and White"
+          color=""
           badge={true}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
@@ -27,25 +27,25 @@ const BestSellers = () => {
           img={bestSellerTwo}
           productName="New Backpack"
           price="180.00"
-          color="Gray"
+          color=""
           badge={false}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
         <Product
           _id="1013"
           img={bestSellerThree}
-          productName="Household materials"
+          productName="Cà phê đen"
           price="25.00"
-          color="Mixed"
+          color=""
           badge={true}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
         <Product
           _id="1014"
           img={bestSellerFour}
-          productName="Travel Bag"
+          productName="Sữa chua xoài"
           price="220.00"
-          color="Black"
+          color=""
           badge={false}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
